@@ -1,0 +1,35 @@
+.btn {
+  color: #ffffff;
+}
+button {
+  width: fit-content;
+}
+label {
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.container {
+  margin: auto;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.btnb {
+  color: #ffffff;
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+}
+.btnr {
+  color: #ffffff;
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+}

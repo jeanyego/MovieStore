@@ -1,0 +1,26 @@
+#logo {
+  width: 150px;
+  height: 150px;
+}
+/* body {
+  margin-left: 60px;
+  margin-right: 60px;
+} */
+
+.btn {
+  color: #ffffff;
+}
+button {
+  width: fit-content;
+}
+label {
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.container {
+  margin: auto;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+}

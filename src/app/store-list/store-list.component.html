@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="alert alert-info" role="alert">
+    Real and Reel: Buy One Get Two Free
+  </div>
+  <button type="button" class="btn btn-primary" (click)="uploadMovie()">
+    Upload Movie
+  </button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Movie Name</th>
+        <th scope="col">Time</th>
+        <th scope="col">Lead Actor</th>
+        <th scope="col">Movie Director</th>
+        <th scope="col">Genre</th>
+        <th scope="col">Ratings</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of Movies">
+        <th scope="row">{{ movie.id }}</th>
+        <td>{{ movie.moviename }}</td>
+        <td>{{ movie.duration }}</td>
+        <td>{{ movie.leadactor }}</td>
+        <td>{{ movie.director }}</td>
+        <td>{{ movie.genre }}</td>
+        <td>{{ movie.rating }}</td>
+        <td class="button">
+          <button class="btn btn-danger" (click)="delete(movie.id)">
+            Delete Movie
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

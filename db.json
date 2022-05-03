@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "Movies": [
+    {
+      "moviename": "Joker",
+      "duration": "2 hrs",
+      "rating": "PG",
+      "leadactor": "Joaquin Phoenix",
+      "director": "Todd Philips",
+      "genre": "Drama/Crime",
+      "id": 1
+    },
+    {
+      "moviename": "BlackPather",
+      "duration": "2hrs 15Min",
+      "rating": "PG",
+      "leadactor": "Chadwick Boseman",
+      "director": "Ryan Coogler",
+      "genre": "Action",
+      "id": 2
+    },
+    {
+      "moviename": "Encanto",
+      "duration": "1hr 49Min",
+      "rating": "PG",
+      "leadactor": "Stephanie Beatriz",
+      "director": "Byron Howard",
+      "genre": "Family/Musical",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

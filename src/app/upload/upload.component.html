@@ -1,0 +1,91 @@
+<div class="container">
+  <div class="alert alert-info" role="alert">
+    Real and Reel: Buy One Get Two Free
+  </div>
+  <form [formGroup]="uploadForm">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="moviename">Movie Name</label>
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="moviename"
+            placeholder="Movie Name"
+            formControlName="moviename"
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="duration">Duration</label>
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="duration"
+            placeholder="Time in hrs"
+            formControlName="duration"
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="">Rating</label>
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="rating"
+            placeholder="PG"
+            formControlName="rating"
+          />
+        </div>
+        <br />
+        <button class="btnb btn-primary" (click)="upload()">
+          Submit Movie
+        </button>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="actor">Lead Actor</label>
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="actor"
+            placeholder="Lead Actor"
+            formControlName="leadactor"
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="director">Movie Director</label>
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="director"
+            placeholder="Director"
+            formControlName="director"
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="">Genre</label>
+          <br />
+          <input
+            type="text"
+            class="form-control"
+            id="Genre"
+            placeholder="Action"
+            formControlName="genre"
+          />
+        </div>
+        <br />
+        <button class="btnr btn-danger" (click)="reset()">Reset</button>
+        <br />
+      </div>
+    </div>
+  </form>
+</div>
