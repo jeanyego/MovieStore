@@ -2,9 +2,20 @@
   <div class="alert alert-info" role="alert">
     Real and Reel: Buy One Get Two Free
   </div>
-  <button type="button" class="btn btn-primary" (click)="uploadMovie()">
-    Upload Movie
-  </button>
+  <div class="up">
+    <button type="button" class="btn btn-primary" (click)="uploadMovie()">
+      Upload Movie
+    </button>
+    <!-- <input type="email" matInput placeholder=" Search Movies.." /> -->
+    <input
+      class="form-control"
+      type="text"
+      name="search"
+      [(ngModel)]="searchText"
+      autocomplete="off"
+      placeholder="Search Movies.."
+    />
+  </div>
   <table class="table">
     <thead>
       <tr>
@@ -19,7 +30,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let movie of Movies">
+      <tr *ngFor="let movie of Movies | filter: searchText">
         <th scope="row">{{ movie.id }}</th>
         <td>{{ movie.moviename }}</td>
         <td>{{ movie.duration }}</td>

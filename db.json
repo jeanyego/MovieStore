@@ -8,15 +8,6 @@
   ],
   "Movies": [
     {
-      "moviename": "Joker",
-      "duration": "2 hrs",
-      "rating": "PG",
-      "leadactor": "Joaquin Phoenix",
-      "director": "Todd Philips",
-      "genre": "Drama/Crime",
-      "id": 1
-    },
-    {
       "moviename": "BlackPather",
       "duration": "2hrs 15Min",
       "rating": "PG",

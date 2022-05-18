@@ -24,3 +24,10 @@ label {
   align-items: center;
   justify-content: center;
 }
+.up {
+  display: inline-flex;
+}
+.form-control {
+  margin-left: 880px;
+  width: 290px;
+}

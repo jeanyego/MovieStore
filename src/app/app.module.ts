@@ -9,7 +9,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UploadComponent } from './upload/upload.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { MatInputModule } from '@angular/material/input';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import {
+  GoogleLoginProvider,
+  SocialLoginModule,
+  SocialAuthServiceConfig,
+} from 'angularx-social-login';
 @NgModule({
   declarations: [AppComponent, StoreListComponent, UploadComponent],
   imports: [
@@ -19,9 +25,26 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     FormsModule,
     NgbModule,
+    MatInputModule,
+    SocialLoginModule,
+    GoogleLoginProvider,
+    Ng2SearchPipeModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(''),
+          },
+        ],
+      } as SocialAuthServiceConfig,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

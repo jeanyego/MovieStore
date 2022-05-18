@@ -18,6 +18,7 @@ export interface Movies {
 })
 export class StoreListComponent implements OnInit {
   title = 'MovieStore';
+  searchText: any;
 
   Movies: Movies[] = [];
 
